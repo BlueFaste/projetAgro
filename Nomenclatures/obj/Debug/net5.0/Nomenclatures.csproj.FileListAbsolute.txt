@@ -1,0 +1,12 @@
+C:\Users\Caroline\Desktop\Csharp\projetAggro\Nomenclatures\bin\Debug\net5.0\Nomenclatures.deps.json
+C:\Users\Caroline\Desktop\Csharp\projetAggro\Nomenclatures\bin\Debug\net5.0\Nomenclatures.dll
+C:\Users\Caroline\Desktop\Csharp\projetAggro\Nomenclatures\bin\Debug\net5.0\ref\Nomenclatures.dll
+C:\Users\Caroline\Desktop\Csharp\projetAggro\Nomenclatures\bin\Debug\net5.0\Nomenclatures.pdb
+C:\Users\Caroline\Desktop\Csharp\projetAggro\Nomenclatures\obj\Debug\net5.0\Nomenclatures.csproj.AssemblyReference.cache
+C:\Users\Caroline\Desktop\Csharp\projetAggro\Nomenclatures\obj\Debug\net5.0\Nomenclatures.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Caroline\Desktop\Csharp\projetAggro\Nomenclatures\obj\Debug\net5.0\Nomenclatures.AssemblyInfoInputs.cache
+C:\Users\Caroline\Desktop\Csharp\projetAggro\Nomenclatures\obj\Debug\net5.0\Nomenclatures.AssemblyInfo.cs
+C:\Users\Caroline\Desktop\Csharp\projetAggro\Nomenclatures\obj\Debug\net5.0\Nomenclatures.csproj.CoreCompileInputs.cache
+C:\Users\Caroline\Desktop\Csharp\projetAggro\Nomenclatures\obj\Debug\net5.0\Nomenclatures.dll
+C:\Users\Caroline\Desktop\Csharp\projetAggro\Nomenclatures\obj\Debug\net5.0\ref\Nomenclatures.dll
+C:\Users\Caroline\Desktop\Csharp\projetAggro\Nomenclatures\obj\Debug\net5.0\Nomenclatures.pdb
