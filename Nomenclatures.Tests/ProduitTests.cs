@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace Nomenclatures.Tests
 {
-    public class Tests
+    public class ProduitTests
     {
         [SetUp]
         public void Setup()
@@ -10,9 +10,9 @@ namespace Nomenclatures.Tests
         }
 
         [Test]
-        public void Test1()
+        public void Produit_AddOne()
         {
-            Assert.Pass();
+           _produit.add(IComponent, Quantity, Unit);
         }
     }
 }
