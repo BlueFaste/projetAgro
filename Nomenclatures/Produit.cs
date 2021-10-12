@@ -15,13 +15,19 @@ namespace Nomenclatures
 
         public string Description { get; set; }
 
-        public void Add(IComponent component, double qty, Unit unit)
+        public DateTime DateLimiteConsomation {get; set;}
+
+        public DateTime DateFabrication {get; set;}
+
+        public void Add(IComponent component, double qty, Unit unit, TimeSpan DureeConsomation, TimeSpan DureeUtilisationOptimale)
         {
             _components.Add(new ComponentQty()
                     {
                         Component = component,
                         Qty = qty,
                         Unit = unit,
+                        DureeConsomation = DureeConsomation,
+                        DureeUtilisationOptimale = DureeUtilisationOptimale,
                     }
                 
             );
@@ -30,6 +36,19 @@ namespace Nomenclatures
         public void Remove(IComponent component)
         {
             _components.Remove(_components.First(c => c.Component == component));
+        }
+
+        public void CalculateDateLimiteConsomation(Produit produit)
+        {
+            Console.WriteLine(produit);
+
+        }
+        
+        public void CalculateDateLimiteUtilisationOptimal(Produit produit)
+        {
+            Console.WriteLine(produit);
+            
+
         }
 
         public IEnumerator<ComponentQty> GetEnumerator()

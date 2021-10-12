@@ -1,3 +1,4 @@
+using System;
 namespace Nomenclatures
 {
     public class ComponentQty
@@ -7,5 +8,9 @@ namespace Nomenclatures
         public double Qty { get; set; }
 
         public Unit Unit { get; set; }
+
+        public TimeSpan DureeConsomation {get; set;}
+
+        public TimeSpan DureeUtilisationOptimale {get; set;}
     }
 }
