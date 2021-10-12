@@ -8,13 +8,8 @@ namespace Nomenclatures
     public abstract class Produit : IComposite
     {
         private List<ComponentQty> _components = new List<ComponentQty>();
-        private string _nom;
 
-        public string Nom 
-        { 
-            get { return _nom; }
-            set { _nom = value; }
-        }
+        public string Nom {get ; set;}
 
         public int Id { get; set; }
 
@@ -22,12 +17,14 @@ namespace Nomenclatures
 
         public void Add(IComponent component, double qty, Unit unit)
         {
-            _components.Add(new ComponentQty(
-            {
-                Component = component,
-                Qty = qty,
-                Unit = unit
-            }));
+            _components.Add(new ComponentQty()
+                    {
+                        Component = component,
+                        Qty = qty,
+                        Unit = unit,
+                    }
+                
+            );
         }
 
         public void Remove(IComponent component)
