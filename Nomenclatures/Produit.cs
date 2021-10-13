@@ -56,6 +56,15 @@ namespace Nomenclatures
             return dlc;
         }
 
+        public double CalculePoids(){
+
+            foreach(composant in this)
+            {
+                //Chercher la quantité en kg et faire un calcule si matière premiere est humide avec le pourcentage
+            }
+
+        }
+
         public void Add(IComponent component, double qty, Unit unit)
         {
             _components.Add(new ComponentQty
