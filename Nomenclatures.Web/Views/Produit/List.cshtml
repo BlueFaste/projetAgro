@@ -1,0 +1,16 @@
+@model IEnumerable<Produit>
+
+<h1>Produit</h1>
+
+<a asp-action="Create">Créer</a>
+
+<ul>
+    @foreach (var mp in Model)
+    {
+        <li>
+            <a asp-action="Edit" asp-route-id="@mp.Id">@mp.Nom</a>
+            
+            <a asp-action="Delete" asp-route-id="@mp.Id">Supprimer</a>
+        </li>
+    }
+</ul>
