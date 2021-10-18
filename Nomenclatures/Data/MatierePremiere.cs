@@ -28,11 +28,14 @@ namespace Nomenclatures.Data
 
         public int Id { get; set; }
 
+        [Required]
         public string Description { get; set; }
 
         public int PourcentageHumidite { get; set; }
 
+  
         public double PoidsUnitaire { get; set; }
+
 
         public TimeSpan? DureeConservation { get; set; }
 
