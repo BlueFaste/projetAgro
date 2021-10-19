@@ -20,6 +20,18 @@ namespace Nomenclatures
 
         public string Description { get; set; }
 
+        public bool Bio {get; set;}
+
+        public bool CalculeIfIsBio(){
+            foreach(var composant in this)
+            {
+                Console.WriteLine("coucou");
+                // composant.Component.BIO;
+
+            }
+            return true;
+        }
+
         public DateTime? CalculerDLUO(DateTime dateFabrication)
         {
             var dluo = new DateTime(9999, 12, 31);

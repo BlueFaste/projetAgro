@@ -8,6 +8,23 @@ namespace Nomenclatures.Tests
     public class ProduitsTests
     {
         [Test]
+        public void Is_Bio()
+        {
+             var paquetPitchs = new Nomenclatures.Data.ProduitFini()
+            {
+                Nom = "paquet de pitchs"
+            };
+            var pitch = new Nomenclatures.Data.ProduitSemiFini();
+            var farine = new Nomenclatures.Data.MatierePremiere(Bio = true);
+            var chocolat = new Nomenclatures.Data.MatierePremiere(Bio = true);
+
+            paquetPitchs.Composants.Add(new Nomenclatures.Data.ComponentQty { PSF = pitch, Qty = 8});
+            pitch.Composants.Add(new Nomenclatures.Data.ComponentQty { MP = farine, Qty = 100});
+            pitch.Composants.Add(new Nomenclatures.Data.ComponentQty { MP = chocolat, Qty = 20});
+        }
+
+
+        [Test]
         public void Sauvegarde()
         {
             var paquetPitchs = new Nomenclatures.Data.ProduitFini()
