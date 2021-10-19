@@ -13,6 +13,8 @@ namespace Nomenclatures.Data
 
         public bool Bio { get; set; }
 
+        public float Prix {get; set;}
+
         public ICollection<ComponentQty> Composants { get; set; }
             = new List<ComponentQty>();
     }

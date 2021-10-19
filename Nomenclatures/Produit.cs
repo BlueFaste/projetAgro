@@ -22,6 +22,9 @@ namespace Nomenclatures
 
         public bool Bio { get; set; }
 
+        public float Prix {get; set;}
+
+
         public bool IsValid
         {
             get

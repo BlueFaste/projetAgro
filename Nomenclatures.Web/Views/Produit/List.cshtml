@@ -10,6 +10,8 @@
             <tr>
                 <td>Nom</td>
                 <td>Type</td>
+                <td>Prix</td>
+                <td>Bio</td>
                 <td>Actions</td>
             </tr>
         </thead>
@@ -19,6 +21,8 @@
             <tr>
                 <td><a asp-action="Edit" asp-route-id="@p.Id">@p.Nom</a></td>
                 <td>@p.Type</td>
+                <td>@p.Prix</td>
+                <td>@(p.Bio ? "oui" : "non")</td>
                 <td><a asp-action="Delete" asp-route-id="@p.Id" class="btn btn-primary">Supprimer</a></td>
             </tr>
         }

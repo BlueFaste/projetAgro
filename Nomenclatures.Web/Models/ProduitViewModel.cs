@@ -16,6 +16,7 @@ namespace Nomenclatures.Web.Models
             Id = p.Id;
             Nom = p.Nom;
             Bio = p.Bio;
+            Prix = p.Prix;
 
             Type = p is Nomenclatures.Data.ProduitFini ? ProductType.ProduitFini : ProductType.ProduitSemiFini;
 
@@ -40,6 +41,8 @@ namespace Nomenclatures.Web.Models
         public string Composants { get; set; }
 
         public bool Bio { get; set; }
+
+        public float Prix {get; set;}
 
         public Nomenclatures.Data.Produit ToData()
         {
