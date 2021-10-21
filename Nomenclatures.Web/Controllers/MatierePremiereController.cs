@@ -55,8 +55,8 @@ namespace Nomenclatures.Web
         [HttpPost]
         public IActionResult Save(Nomenclatures.Data.MatierePremiere mp)
         {
-            if (ModelState.IsValid)
-            {
+            // if (ModelState.IsValid)
+            // {
                 if (mp.Id != 0)
                 {
                     _dbContext.Attach(mp).State = EntityState.Modified;
@@ -67,9 +67,19 @@ namespace Nomenclatures.Web
                 }
 
                 _dbContext.SaveChanges();
-            }
+            // }
 
             return RedirectToAction(nameof(List));
+        }
+
+          private decimal calculPrix(Nomenclatures.Data.Produit produit){
+             decimal prixfinal = 0;
+
+             foreach(var composant in produit.Composants ){
+                prixfinal += composant.MP.PrixUnitaire;
+             }
+
+             return prixfinal;
         }
     }
 }

@@ -33,6 +33,8 @@ namespace Nomenclatures
 
         public double PoidsUnitaire { get; set; }
 
+        public decimal PrixUnitaire { get; set; }
+
         public TimeSpan? DureeConservation { get; set; }
 
         public TimeSpan? DureeOptimaleUtilisation 

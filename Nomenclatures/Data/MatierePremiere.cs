@@ -42,5 +42,7 @@ namespace Nomenclatures.Data
         public int? FamilleId { get; set; }
 
         public bool Bio { get; set; }
+
+        public decimal PrixUnitaire { get; set; }
     }
 }
