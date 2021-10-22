@@ -1,8 +1,41 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    
 }
+@model Recherche
 
 <div class="text-center">
     <h1 class="display-4">Gestion des nomenclatures</h1>
     <p>Projet d'apprentissage C# et POO</p>
+
+    <form asp-action="Recherche" method="post">
+        <div>
+            <label asp-for="search">Recherche</label>
+            <input asp-for="search" type="text"/>  
+        </div>
+
+        <div>
+            <label asp-for="pf">Produit fini</label>
+            <input type="checkbox" id="pf" asp-for="pf">  
+
+            <label asp-for="psf">Produit semi fini</label>
+            <input type="checkbox" id="psf" asp-for="psf">  
+
+            <label asp-for="mp">Matière première</label>
+            <input type="checkbox" id="mp" asp-for="mp">  
+
+            <label asp-for="fmp">Famille matière première</label>
+            <input type="checkbox" id="fmp" asp-for="fmp">  
+        </div>
+
+        <div>
+            <label  asp-for="bio">Bio</label>
+            <input type="checkbox" id="bio"  asp-for="bio">
+
+            <label asp-for="nonBio">Non Bio</label>
+            <input type="checkbox" id="nonbio"  asp-for="nonBio">
+        </div>
+
+        <input type="submit" value="Valider la recherche"/>
+    </form>
 </div>
